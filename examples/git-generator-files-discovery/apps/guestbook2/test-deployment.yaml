@@ -1,22 +1,22 @@
 apiVersion: apps/v1
 kind: Deployment
 metadata:
-  name: argocd-demo2
+  name: argocd-demo
   labels:
-    app: argocd-demo2
+    app: argocd-demo
 spec:
   replicas: 1
   revisionHistoryLimit: 3
   selector:
     matchLabels:
-      app: argocd-demo2
+      app: argocd-demo
   template:
     metadata:
       labels:
-        app: argocd-demo2
+        app: argocd-demo
     spec:
       containers:
-      - name: argocd-demo2
+      - name: argocd-demo
         # env:
         #   - name: PORT
         #     valueFrom:
