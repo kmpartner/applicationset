@@ -18,9 +18,9 @@ spec:
       source:
         repoURL: https://github.com/kmpartner/applicationset.git
         targetRevision: HEAD
-        # path: "examples/git-generator-files-discovery/apps/guestbook"
-        path: "examples/git-generator-files-discovery/apps/guestbook2"
+        path: "examples/git-generator-files-discovery/apps/guestbook"
+        # path: "examples/git-generator-files-discovery/apps/guestbook2"
       destination:
-        server: https://kubernetes.default.svc
-        # server: '{{cluster.address}}'
+        # server: https://kubernetes.default.svc
+        server: '{{cluster.address}}'
         namespace: default
