@@ -23,5 +23,5 @@ spec:
         path: '{{path}}'
       destination:
         server: https://kubernetes.default.svc
-        # namespace: '{{path.basename}}'
-        namespace: default
+        namespace: '{{path.basename}}'
+        # namespace: default
