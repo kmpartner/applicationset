@@ -2,10 +2,12 @@ apiVersion: argoproj.io/v1alpha1
 kind: ApplicationSet
 metadata:
   name: cluster-addons
+  namespace: argocd
 spec:
   generators:
   - git:
-      repoURL: https://github.com/argoproj-labs/applicationset.git
+      # repoURL: https://github.com/argoproj-labs/applicationset.git
+      repoURL: https://github.com/kmpartner/applicationset.git
       revision: HEAD
       directories:
       - path: examples/git-generator-directory/cluster-addons/*
@@ -15,7 +17,8 @@ spec:
     spec:
       project: default
       source:
-        repoURL: https://github.com/argoproj-labs/applicationset.git
+        # repoURL: https://github.com/argoproj-labs/applicationset.git
+        repoURL: https://github.com/kmpartner/applicationset.git
         targetRevision: HEAD
         path: '{{path}}'
       destination:
