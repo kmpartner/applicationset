@@ -3,7 +3,7 @@
   "asset_id": "11223344",
   "cluster": {
     "owner": "cluster-admin@company.com",
-    "name": "engineering-dev2",
+    "name": "dev2",
     "address": "https://kubernetes.default.svc"
   }
 }
